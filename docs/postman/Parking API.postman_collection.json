@@ -1,0 +1,967 @@
+{
+	"info": {
+		"_postman_id": "015f747b-2072-4d92-ab49-643adb87cc06",
+		"name": "Parking API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Parking Lot",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/parking-lots?status=available",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"parking-lots"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "available"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/parking-lots",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"parking-lots"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1700"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6a4-wKdZZ48QmZ0R07XZ8HHU43KVaLo\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Dec 2021 21:38:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"label\": \"A1\",\n        \"status\": \"in-used\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 2,\n        \"label\": \"A2\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 3,\n        \"label\": \"A3\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 4,\n        \"label\": \"A4\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 5,\n        \"label\": \"B1\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 6,\n        \"label\": \"B2\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 7,\n        \"label\": \"B3\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 8,\n        \"label\": \"B4\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 9,\n        \"label\": \"C1\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 10,\n        \"label\": \"C2\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 11,\n        \"label\": \"C3\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 12,\n        \"label\": \"C4\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 13,\n        \"label\": \"AAB\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:36:56.000Z\",\n        \"updatedAt\": \"2021-12-15T14:36:56.000Z\"\n    },\n    {\n        \"id\": 14,\n        \"label\": \"A2B\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:38:46.000Z\",\n        \"updatedAt\": \"2021-12-15T14:38:46.000Z\"\n    }\n]"
+						},
+						{
+							"name": "List[in-used]",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/parking-lots?status=in-used",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"parking-lots"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "in-used"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "120"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"78-uIzl+xzKQ1BdZyQLTqH32qZ/KmY\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Dec 2021 21:39:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"label\": \"A1\",\n        \"status\": \"in-used\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    }\n]"
+						},
+						{
+							"name": "List[available]",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/parking-lots?status=available",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"parking-lots"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "available"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1581"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"62d-llMzB4g3CY5tJOfSqfbxRxu7M1I\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Dec 2021 21:40:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"label\": \"A2\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 3,\n        \"label\": \"A3\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 4,\n        \"label\": \"A4\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 5,\n        \"label\": \"B1\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 6,\n        \"label\": \"B2\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 7,\n        \"label\": \"B3\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 8,\n        \"label\": \"B4\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 9,\n        \"label\": \"C1\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 10,\n        \"label\": \"C2\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 11,\n        \"label\": \"C3\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 12,\n        \"label\": \"C4\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    },\n    {\n        \"id\": 13,\n        \"label\": \"AAB\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:36:56.000Z\",\n        \"updatedAt\": \"2021-12-15T14:36:56.000Z\"\n    },\n    {\n        \"id\": 14,\n        \"label\": \"A2B\",\n        \"status\": \"available\",\n        \"createdAt\": \"2021-12-15T14:38:46.000Z\",\n        \"updatedAt\": \"2021-12-15T14:38:46.000Z\"\n    }\n]"
+						},
+						{
+							"name": "List[Car size medium]",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/parking-lots?carSize=medium",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"parking-lots"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "available",
+											"disabled": true
+										},
+										{
+											"key": "carSize",
+											"value": "medium"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "121"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"79-t29vUKizT6JDXJwansh3WBS1wnk\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 20 Dec 2021 13:07:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 27,\n        \"label\": \"A1\",\n        \"status\": \"in-used\",\n        \"createdAt\": \"2021-12-20T04:29:42.000Z\",\n        \"updatedAt\": \"2021-12-20T05:14:30.000Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "View Parking Lot Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/parking-lots/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"parking-lots",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "27"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Notfound",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/parking-lots/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"parking-lots",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "27"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "61"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3d-k2Mt9eI27fQtFAR9q3HI23Rulf0\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 20 Dec 2021 11:48:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"value\": 1,\n    \"msg\": \"Notfound\",\n    \"param\": \"id\",\n    \"location\": \"params\"\n}"
+						},
+						{
+							"name": "View Parking Lot Status",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/parking-lots/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"parking-lots",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "27"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "121"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"79-8IsGyUlEV9s7IgYoX5OoxiytPwA\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 20 Dec 2021 11:49:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 27,\n    \"label\": \"A1\",\n    \"status\": \"available\",\n    \"createdAt\": \"2021-12-20T04:29:42.000Z\",\n    \"updatedAt\": \"2021-12-20T04:29:42.000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"label\":\"AAB\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/parking-lots",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"parking-lots"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Duplicate",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"label\":\"AAB\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/parking-lots",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"parking-lots"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "80"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"50-S3XxEYzV0VNVYSpTIGEDJ9bxaAE\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Dec 2021 21:37:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": [\n        {\n            \"value\": \"AAB\",\n            \"msg\": \"Duplicate\",\n            \"param\": \"label\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"label\":\"A2B\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/parking-lots",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"parking-lots"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "122"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7a-ItlsLls0qUVouJSO9o8Efrer/wc\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Dec 2021 21:38:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 14,\n    \"label\": \"A2B\",\n    \"status\": \"available\",\n    \"createdAt\": \"2021-12-15T14:38:46.000Z\",\n    \"updatedAt\": \"2021-12-15T14:38:46.000Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ticket",
+			"item": [
+				{
+					"name": "Issue Ticket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/tickets",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"tickets"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Invalid Car Plate No.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/tickets",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"tickets"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "84"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"54-mgtmprsn2RShRYTmiK/Nk9JSpLY\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Dec 2021 20:45:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": [\n        {\n            \"value\": \"\",\n            \"msg\": \"Invalid value\",\n            \"param\": \"carPlate\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Issue Ticket",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"carPlate\": \"6กก 2028\",\n    \"carSize\": \"small\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/tickets",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"tickets"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "218"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"da-PJHNBfPIq59f9HRBLOuEQk1Yo1Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Dec 2021 21:33:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"carPlateNo\": \"6กก 2028\",\n    \"carSize\": \"small\",\n    \"parkingLotId\": 1,\n    \"isCheckout\": 0,\n    \"parkingLot\": {\n        \"id\": 1,\n        \"label\": \"A1\",\n        \"status\": \"in-used\",\n        \"createdAt\": \"2021-12-15T14:28:19.000Z\",\n        \"updatedAt\": \"2021-12-15T14:28:19.000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Checkout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/tickets/:id/checkout",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"tickets",
+								":id",
+								"checkout"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Checkout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/tickets/:id/checkout",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"tickets",
+										":id",
+										"checkout"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "87"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"57-FpOnsi7CEC/iGfjSs9CmptLk3ys\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 20 Dec 2021 12:05:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"carPlateNo\": \"6กก 2028\",\n    \"carSize\": \"small\",\n    \"parkingLotId\": 27,\n    \"isCheckout\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/tickets?carSize=large",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"tickets"
+							],
+							"query": [
+								{
+									"key": "carSize",
+									"value": "large"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List[Car size small]",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/tickets?carSize=small",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"tickets"
+									],
+									"query": [
+										{
+											"key": "carSize",
+											"value": "small"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "332"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14c-xxz2gJM00DX76VyeUt24/XnXMrE\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 20 Dec 2021 12:13:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"carPlateNo\": \"6กก 2028\",\n        \"carSize\": \"small\",\n        \"parkingLotId\": 1,\n        \"isCheckout\": 1,\n        \"createdAt\": \"2021-12-15T14:33:11.000Z\",\n        \"updatedAt\": \"2021-12-15T14:56:03.000Z\"\n    },\n    {\n        \"id\": 2,\n        \"carPlateNo\": \"6กก 2028\",\n        \"carSize\": \"small\",\n        \"parkingLotId\": 27,\n        \"isCheckout\": 1,\n        \"createdAt\": \"2021-12-20T05:04:21.000Z\",\n        \"updatedAt\": \"2021-12-20T05:05:06.000Z\"\n    }\n]"
+						},
+						{
+							"name": "List[Car size medium]",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/tickets?carSize=medium",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"tickets"
+									],
+									"query": [
+										{
+											"key": "carSize",
+											"value": "medium"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "168"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a8-0ZpN6gt96gUiYdLkKpOpvoM4KjU\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 20 Dec 2021 12:14:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3,\n        \"carPlateNo\": \"6กก 2128\",\n        \"carSize\": \"medium\",\n        \"parkingLotId\": 27,\n        \"isCheckout\": 0,\n        \"createdAt\": \"2021-12-20T05:14:30.000Z\",\n        \"updatedAt\": \"2021-12-20T05:14:30.000Z\"\n    }\n]"
+						},
+						{
+							"name": "List[Car size large]",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/tickets?carSize=large",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"tickets"
+									],
+									"query": [
+										{
+											"key": "carSize",
+											"value": "large"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "166"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a6-qbWZLwISFljCUcPxOb+nuKSy3PQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 20 Dec 2021 12:15:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 4,\n        \"carPlateNo\": \"กก 2128\",\n        \"carSize\": \"large\",\n        \"parkingLotId\": 28,\n        \"isCheckout\": 0,\n        \"createdAt\": \"2021-12-20T05:15:15.000Z\",\n        \"updatedAt\": \"2021-12-20T05:15:15.000Z\"\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}
