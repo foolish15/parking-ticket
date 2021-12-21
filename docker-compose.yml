@@ -1,8 +1,7 @@
 version: "3.6"
 services:
   app: 
-    build: ./
-    image: parking-ticket-app
+    image: ghcr.io/foolish15/parking-ticket:main
     ports:
       - 8080:8080
     networks:
