@@ -20,7 +20,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Build the Docker image
-    - run: docker build . --file Dockerfile --tag ghcr.io/foolish15/parking-ticket:latest
-    - run: docker push ghcr.io/foolish15/parking-ticket:latest
+      - uses: actions/checkout@v2
+      - name: Build the Docker image
+      - run: docker build . --file Dockerfile --tag ghcr.io/foolish15/parking-ticket:latest
+      - run: docker push ghcr.io/foolish15/parking-ticket:latest
